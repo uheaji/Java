@@ -1,18 +1,45 @@
 package star1;
-class Marine {
-	// field, property는 private로 만든다. (마법x)
+
+class Marine extends StarUnit{
 	private String name;
 	private int hp;
 	private int attack;
 	
-	// this는 heap을 가르킨다.
-	public Marine(String name, int hp, int attack) { // alt + shift + s : 생성자 생성
-		this.name = name; // this는 heap변수, new가 된 heap공간을 Binding한다.
-		this.hp = hp;  // static에는 this x
-		this.attack = attack;
-	}
-	
 	public Marine() {
 		
 	}
+
+	public Marine(String name, int hp, int attack) {
+		this.name = name;
+		this.hp = hp;
+		this.attack = attack;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public int getAttack() {
+		return attack;
+	}
+
+	public void setAttack(int attack) {
+		this.attack = attack;
+	}
+	
+	
+	
+	
 }
