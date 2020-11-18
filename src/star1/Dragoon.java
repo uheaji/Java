@@ -40,6 +40,4 @@ class Dragoon extends StarUnit {
 	}
 	
 	
-	
-	
 }

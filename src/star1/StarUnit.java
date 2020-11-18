@@ -9,7 +9,7 @@ public class StarUnit {
 		
 	}
 	
-	int getHP () {
+	int getHP() {
 		return 0;
 	}
 	int getAttack() {

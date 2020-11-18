@@ -1,5 +1,5 @@
 package star1;
-class Scv {
+class Scv extends StarUnit{
 	private String name;
 	private int hp;
 	private int attack;
