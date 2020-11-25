@@ -11,7 +11,7 @@ class ResponseDto<K>{
 
 public class Generic01 {
 	public static void main(String[] args) {
-		ResponseDto<String> dto = new ResponseDto(); // <> 안에 int x
+		ResponseDto<String> dto = new ResponseDto(); // <> 안에 int x, Integer o
 		dto.setStatusCode(200);
 		dto.setData("사과");
 		
