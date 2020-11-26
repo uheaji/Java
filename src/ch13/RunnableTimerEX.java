@@ -41,8 +41,9 @@ public class RunnableTimerEX extends JFrame {
 		timerLabel.setFont(new Font("Gothic", Font.ITALIC, 80));
 		c.add(timerLabel);
 		
-		TimerRunnable runnable = new TimerRunnable(timerLabel);
-		Thread t1 = new Thread(runnable);
+//		TimerRunnable runnable = new TimerRunnable(timerLabel);
+//		Thread t1 = new Thread(runnable);
+		Thread t1 = new Thread(new TimerRunnable(timerLabel));
 		
 		setSize(250, 150);
 		setVisible(true);
