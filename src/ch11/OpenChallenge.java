@@ -1,6 +1,7 @@
 package ch11;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Container;
 
 import javax.swing.ImageIcon;
@@ -19,20 +20,16 @@ public class OpenChallenge extends JFrame{
 	};
 	private JLabel imgla = new JLabel(); // 이미지가 출력될 레이블
 	
-	private ImageIcon imgr = new ImageIcon("Images/right.jpg");
-	private ImageIcon imgl = new ImageIcon("Images/left.jpg");
-	
 	public OpenChallenge() {
 		setTitle("Open Challenge 11");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout());
 		
-		
-		
 		JPanel menuPanel = new JPanel();
-		JButton bntl = new JButton(imgl);
-		JButton bntr = new JButton(imgr);
+		menuPanel.setBackground(Color.gray);
+		JButton bntl = new JButton(new ImageIcon("Images/left.png"));
+		JButton bntr = new JButton(new ImageIcon("Images/right.png"));
 		menuPanel .add(bntl);
 		menuPanel .add(bntr);
 		
