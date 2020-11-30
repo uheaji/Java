@@ -12,12 +12,7 @@ import javax.swing.JPanel;
 
 public class OpenChallenge extends JFrame{
 	
-	private ImageIcon [] img1 = {
-			new ImageIcon("Images/image0.jpg"),
-			new ImageIcon("Images/image1.jpg"),
-			new ImageIcon("Images/image2.jpg"),
-			new ImageIcon("Images/image4.jpg"),
-	};
+	private ImageIcon [] img1 = new ImageIcon[4];
 	private JLabel imgla = new JLabel(); // 이미지가 출력될 레이블
 	
 	public OpenChallenge() {
@@ -28,10 +23,10 @@ public class OpenChallenge extends JFrame{
 		
 		JPanel menuPanel = new JPanel();
 		menuPanel.setBackground(Color.gray);
-		JButton bntl = new JButton(new ImageIcon("Images/left.png"));
-		JButton bntr = new JButton(new ImageIcon("Images/right.png"));
-		menuPanel .add(bntl);
-		menuPanel .add(bntr);
+		JButton btnl = new JButton(new ImageIcon("Images/left.png"));
+		JButton btnr = new JButton(new ImageIcon("Images/right.png"));
+		menuPanel .add(btnl);
+		menuPanel .add(btnr);
 		
 		c.add(imgla, BorderLayout.CENTER);
 		c.add(menuPanel , BorderLayout.SOUTH);
